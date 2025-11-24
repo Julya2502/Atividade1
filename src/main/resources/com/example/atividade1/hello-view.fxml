@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.atividade1.HelloController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Calculadora - Atividade 1"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="txtNum1" promptText="Digite o primeiro número"/>
+    <TextField fx:id="txtNum2" promptText="Digite o segundo número"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnSomar" text="+"/>
+        <Button fx:id="btnSubtrair" text="-"/>
+        <Button fx:id="btnMultiplicar" text="×"/>
+        <Button fx:id="btnDividir" text="÷"/>
+    </HBox>
+
+    <Label fx:id="lblResultado" text="Resultado:" style="-fx-font-size: 16px;"/>
+
+</VBox>
